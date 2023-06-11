@@ -25,8 +25,8 @@ SoCのSPIのレジスタを確認する。ただし、通信中のみ値が有�
 **フォーマット**  
 elapsed_time[sec]=経過時間  
 event[1-0]diff_time[sec]=前回イベントからの時間  
-before= レジスタ変更前の値 16進数表示 2進数表示  
-after= レジスタ変更後の値 16進数表示 2進数表示
+before= レジスタ変更前の値(32bit) 16進数表示 2進数表示  
+after= レジスタ変更後の値(32bit) 16進数表示 2進数表示
 
 ~~~shell
 user@hoge:~$ sudo bash ./devmem_edge_detect.sh 0xE0007000 5
