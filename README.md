@@ -8,6 +8,7 @@
 $ sudo bash ./devmem_edge_detect.sh 0xE0007000 5
 ~~~
 第１引数：物理アドレス
+
 第２引数：検知回数
 
 1. 上記の様にツールを起動する。検知待ちに入る
@@ -18,11 +19,16 @@ $ sudo bash ./devmem_edge_detect.sh 0xE0007000 5
 SoCのSPIのレジスタを確認する。ただし、通信中のみ値が有効になるので、ダミー通信を行う。
 
 レジスタアドレス：0xE0007000
+
 検知回数：５回まで(３回イベント後、手動停止)
 
 **フォーマット**
-elapsed_time[sec]=経過時間 event[1-0]diff_time[sec]=前回イベントからの時間
+elapsed_time[sec]=経過時間
+
+event[1-0]diff_time[sec]=前回イベントからの時間
+
 before= レジスタ変更前の値 16進数表示 2進数表示
+
 after= レジスタ変更後の値 16進数表示 2進数表示
 
 ~~~shell
